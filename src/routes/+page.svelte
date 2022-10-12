@@ -2,7 +2,7 @@
 	import Board from '../components/Board.svelte';
 	import Post from '../components/Post.svelte';
 	export let data;
-	export let form;
+
 	let show;
 	function toggle() {
 		show = !show;
@@ -28,7 +28,7 @@
 		</button>
 		<div>
 			{#if show}
-				<Post {form} />
+				<Post />
 			{/if}
 		</div>
 	</div>

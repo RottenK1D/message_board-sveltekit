@@ -1,7 +1,3 @@
-<script>
-	export let form;
-</script>
-
 <section>
 	<form method="POST" action="?/create" class="flex flex-col md:min-w-[500px] min-w-[300px]">
 		<input
