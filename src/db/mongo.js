@@ -1,8 +1,7 @@
 import { MongoClient } from 'mongodb';
-require('dotenv').config();
 
 // creating client
-const client = new MongoClient(process.env.MONGODB_URI);
+const client = new MongoClient(import.meta.env.VITE_URI);
 
 // client connecting
 export async function startMongo() {
