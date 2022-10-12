@@ -1,8 +1,8 @@
 import { MongoClient } from 'mongodb';
-import { MONGO_URI } from '$env/static/public';
+require('dotenv').config();
 
 // creating client
-const client = new MongoClient(MONGO_URI);
+const client = new MongoClient(process.env.MONGODB_URI);
 
 // client connecting
 export async function startMongo() {

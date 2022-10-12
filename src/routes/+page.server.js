@@ -2,7 +2,7 @@ import { board } from '$db/board';
 
 export const load = async () => {
 	try {
-		const data = await board.find().toArray();
+		const data = await board.find({}).toArray();
 		return {
 			status: 200,
 			board: data
