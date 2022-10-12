@@ -1,8 +1,7 @@
 import { MongoClient } from 'mongodb';
-import { MCLI_PRIVATE_API_KEY } from '$env/static/private';
 
 // creating client
-const client = new MongoClient(MCLI_PRIVATE_API_KEY);
+const client = new MongoClient(import.meta.env.VITE_MCLI_PRIVATE_API_KEY);
 
 // client connecting
 export async function startMongo() {
